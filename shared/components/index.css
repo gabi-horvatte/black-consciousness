@@ -1,0 +1,28 @@
+#menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: ". menu-title menu-title menu-title menu-links";
+
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  color: #fff;
+}
+
+#menu-title {
+  grid-area: menu-title;
+}
+
+#menu-links {
+  display: grid;
+
+  grid-area: menu-links;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  padding-right: 15%;
+}
+
+#menu-links > a {
+  text-decoration: none;
+  color: #fff;
+}
